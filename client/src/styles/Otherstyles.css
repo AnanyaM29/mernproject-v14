@@ -1,0 +1,672 @@
+/* Style for the entire admin menu */
+.admin-menu {
+    background-color: #333; /* Background color for the menu */
+    color: #fff; /* Text color */
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Style for individual menu items */
+  .admin-menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .admin-menu li {
+    margin-bottom: 10px;
+  }
+  
+  /* Style for active link */
+  .admin-menu a.active {
+    background-color: #555; /* Background color for the active link */
+    color: #ffcc00; /* Text color for the active link */
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Remove underlines from links */
+  .admin-menu a {
+    text-decoration: none;
+  }
+  
+  /* Hover effect for links */
+  .admin-menu a:hover {
+    color: #ffcc00; /* Change text color on hover */
+  }
+  
+  /* Style for the entire user menu */
+.user-menu {
+    background-color: #009688; /* Background color for the menu */
+    color: #fff; /* Text color */
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Style for the list of dashboard items */
+  .dashboard-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .dashboard-list li {
+    margin-bottom: 10px;
+  }
+  
+  /* Style for active link */
+  .user-menu a.active {
+    background-color: #00a699; /* Background color for the active link */
+    color: #fff; /* Text color for the active link */
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Remove underlines from links */
+  .user-menu a {
+    text-decoration: none;
+  }
+  
+  /* Hover effect for links */
+  .user-menu a:hover {
+    color: #ffcc00
+    ; /* Change text color on hover */
+  }
+/* Profile.css */
+
+/* General container styles */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  /* Profile form container styles */
+  .profile-form-container {
+    background-color: #ac9b074f;
+    border: 1px solid #fafbfc;
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+   /* width: 100%;
+    text-align: center; /* Center align contents within the form 
+   
+    align-items: center;
+    justify-content: center; */
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  flex-direction: column;
+  background-color: #f1c40f;
+  background-image: linear-gradient(90deg, #0ff1c0, #3ce7de); */
+  
+  /* Profile title styles */
+  .profile-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #007bff;
+  }
+  
+  /* Form group styles */
+  .profile-form-group {
+    margin-bottom: 1rem;
+  }
+  
+  /* Form input styles */
+  .profile-form-control {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Button styles */
+  .profile-btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Button hover effect */
+  .profile-btn-primary:hover {
+    background-color: #0056b3;
+  }
+  /* HomePage.css */
+
+/* Style for the left-hand side menu container */
+.filters {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Filter titles styles */
+  .filters h4 {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    text-align: center;
+  }
+  
+  /* Category filters styles */
+  .filters .category-filter {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .filters .category-filter label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filters .category-filter input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  /* Price filter styles */
+  .filters .price-filter {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .filters .price-filter .ant-radio-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .filters .reset-button {
+    text-align: center;
+    margin-top: 1rem;
+    color: #030d14;
+  }
+  
+  /* Reset filters button styles */
+  .filters .reset-button button {
+    background-color: #e5a293;
+    color: #140404;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: min-content;
+  }
+  
+  /* Reset button hover effect */
+  .filters .reset-button button:hover {
+    background-color: #0c0301;
+    width: min-content;
+  }
+  
+/* Homepage.css */
+
+.sidebar {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -300px; /* Adjust this value to control how much the sidebar is initially hidden */
+    background-color: #854646; /* Background color of the sidebar */
+    overflow-x: hidden;
+    transition: 0.5s; /* You can adjust the transition speed */
+    z-index: 1;
+  }
+  
+  .sidebar.open {
+    width: 300px; /* Adjust this value to control the sidebar's width when it's open */
+    left: 0;
+  }
+  
+  .sidebar-toggle {
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #333; /* Background color of the toggle button */
+    color: #fff; /* Text color of the toggle button */
+  }
+  
+  .sidebar-content {
+    padding: 20px;
+  }
+  
+  .open-sidebar-button {
+    position: absolute;
+    top: 50px;
+    left: 350px;
+    z-index: 2;
+    background-color: #854646; /* Background color of the open button */
+    color: #fff; /* Text color of the open button */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 40px;
+  }
+  
+  .open-sidebar-button:hover {
+    background-color: #21d4da; /* Background color when hovering over the open button */
+ 
+  }
+  
+  /* .home-page {
+    /* display: flex; 
+    justify-content: right;
+    align-items: right;
+    object-fit: cover;
+    background-image: url("C:\Users\acer\Desktop\freestocks-_3Q3tsJ01nc-unsplash.jpg");    
+    object-fit: cover;
+  } */
+  .home-page {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* object-fit: cover; */
+    /* background-image: url("C:\Users\acer\Desktop\mern-project\client\public\images\purseimg.jpg"); */
+    /* background-size: cover; */
+    /* width: 100%; 
+    height: 100vh;  */
+    background-size: cover;
+    background-color: #95a5a6 ;
+  }
+  
+  /* CSS for centering images within card containers */
+.card-img-top {
+    object-fit: cover;
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+  }
+ /* Define the class for the background image */
+ /* Header container */
+.navbar {
+  background-color:  #854646;  /* Change to your preferred background color */
+  /* padding: 15px 0;  */
+  box-shadow: none;
+}
+
+/* Brand logo */
+.navbar-brand {
+  color: #0e0c0c; /* Text color for the brand logo */
+  font-size: 24px; /* Adjust font size */
+  text-decoration: none; /* Remove underlines */
+}
+
+/* Navigation links */
+.nav-link {
+  color: #030d14; /* Text color for navigation links */
+  margin-right: 20px; /* Add some spacing between links */
+  font-size: 16px; /* Adjust font size */
+  text-decoration: none; /* Remove underlines */
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: #f3eeee; /* Background color for dropdown menu */
+}
+
+/* Modern hover effect for links */
+.nav-link:hover {
+  text-decoration: underline; /* Add an underline on hover */
+  transition: 0.2s; /* Add a smooth transition effect */
+}
+
+/* Modern hover effect for dropdown links */
+.dropdown-item:hover {
+  background-color: #555; /* Background color on hover */
+  color: #fff; /* Text color on hover */
+}
+
+/* Badge for the cart */
+.ant-badge-count {
+  background-color: #ff5722; /* Background color for the badge */
+  color: #fff; /* Text color for the badge */
+  font-size: 14px; /* Adjust font size */
+  border: 1px solid #fff; /* Add a border around the badge */
+  border-radius: 50%; /* Make the badge circular */
+}
+
+/* Modern button styles for the toggle button */
+.navbar-toggler-icon {
+  background-color: #fff; /* Color of the hamburger icon */
+  border-radius: 4px; /* Add some rounded corners */
+}
+
+/* Modern styles for the search input */
+/* Add specific styles for the SearchInput component as needed */
+/* Style the "Add to Cart" button */
+.card .add-to-cart-button {
+  background-color: #4CAF50; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  font-weight: bold; /* Make the text bold */
+  text-transform: uppercase; /* Transform text to uppercase */
+}
+
+/* Style the "More Details" button */
+.card .more-details-button {
+  background-color: rgb(200, 255, 0); /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  font-weight: bold; /* Make the text bold */
+  text-transform: uppercase; /* Transform text to uppercase */
+}
+
+
+
+
+/* Adjust other button styles as needed */
+.footer {
+  background-color: #8a5b5b; /* Change to your preferred background color */
+  color: #fff; /* Text color for the footer */
+  padding: 10px 0; /* Add padding for spacing */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px; /* Adjust the margin to create spacing between content and footer */
+}
+
+.footer-content {
+  text-align: center;
+}
+
+/* Add a margin to the content to prevent overlap with the footer */
+.home-text{
+  font-family: cursive;
+}
+/* Apply these styles to your CartPage component or import a CSS file */
+
+/* Styles for the cart items */
+.cart-page {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.cart{
+  width: 300px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  margin-bottom: 20px;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.cart-item{
+  width: 550px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  margin-bottom: 20px;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styles for each cart item */
+/* .card {
+  margin-bottom: 20px;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+} */
+.card {
+  width: 250px; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  margin-bottom: 20px;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.card-img {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 16px;
+}
+
+.card-body {
+  padding: 10px;
+}
+.with-black-font {
+  color: black;
+}
+/* Styles for the Cart Summary section */
+.cart-summary {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for buttons */
+.btn {
+  margin: 5px;
+  padding: 10px 20px;
+}
+
+/* Styles for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+/* Styles for the "Proceed to Checkout" button */
+.btn-primary {
+  background-color:  rgb(229, 255, 0);;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+/* Add these styles to your CartPage.css or custom CSS file */
+.btn-remove {
+  background-color: rgb(229, 255, 0); /* Red background color */
+  color: #030303; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-remove:hover {
+  background-color: rgb(0, 70, 221); /* Darker red on hover */
+}
+
+/* Adjust the class in your button element */
+
+/* Additional styling for links, forms, and other elements as needed */
+/* Categories.css */
+
+.container {
+  margin-top: 100px;
+}
+
+/* .card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  text-align: center; /* Center text within the card 
+/* }  */
+
+.card {
+  width: 250px; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  margin-bottom: 20px;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.cat-link {
+  text-decoration: none;
+  color: #007bff; /* Change link color to blue */
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px;
+  transition: background-color 0.2s;
+}
+
+.cat-link:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
+  text-decoration: underline; /* Underline link on hover */
+}
+/* styles.css */
+.custom-navbar {
+  background-color: #8a5b5b;
+  /* Additional styles here */
+}
+/* ProductDetails.css */
+
+.product-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  margin: 20px;
+}
+
+.product-image {
+  max-width: 50%; /* Limit the width of the image to prevent it from being too large */
+  max-height: 400px; /* Limit the image height */
+  object-fit: contain; /* Maintain the image's aspect ratio */
+  margin-right: 20px;
+}
+
+.product-image img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  max-height: 400px; /* Limit the image height */
+  object-fit: contain; /* Maintain the image's aspect ratio */
+}
+
+.product-info {
+  margin-left: 20px;
+  flex: 1; /* Allow the product information to take up available space */
+}
+
+/* Rest of your CSS styles for product information here */
+.product-title {
+  font-size: 24px; /* Adjust the font size as needed */
+}
+
+.product-description {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.add-to-cart-btn {
+  background-color: #f0c14b; /* Customize button background color */
+  color: #111; /* Customize button text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #ddb347; /* Background color on hover */
+}
+
+/* Styling for the similar products section */
+.similar-products {
+  margin-top: 20px;
+}
+
+.related-products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.related-product-card {
+  width: calc(33.33% - 20px);
+  margin: 0 10px 20px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.related-product-card img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  max-height: 200px; /* Limit the image height */
+  object-fit: contain; /* Maintain the image's aspect ratio */
+}
+
+.product-name {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.view-btn, .add-to-cart-btn {
+  background-color: #f0c14b; /* Customize button background color */
+  color: #111; /* Customize button text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 45%; /* Adjust the button width */
+  font-size: 16px;
+}
+
+.view-btn:hover, .add-to-cart-btn:hover {
+  background-color: #ddb347; /* Background color on hover */
+}
